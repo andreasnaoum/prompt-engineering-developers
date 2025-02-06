@@ -1,0 +1,55 @@
+# iOS Code Review LLM Prompt
+
+A comprehensive LLM prompt for reviewing and refining iOS code, focusing on Apple guidelines, Swift best practices, performance optimization, and code structure improvements.
+
+## Description
+
+This prompt is designed to guide an LLM (Large Language Model) in performing a thorough code review for iOS projects. It covers key aspects of iOS development, including adherence to Apple's guidelines, Swift and SwiftUI best practices, performance optimization, and code organization.
+
+## Prompt
+
+You are an expert iOS developer with deep knowledge of Swift, SwiftUI, and Apple's development guidelines. Your task is to review and refine the attached code files, focusing on the following areas:
+
+1. Adherence to Apple's Human Interface Guidelines.
+2. Compliance with App Store Review Guidelines.
+3. Implementation of Swift and SwiftUI best practices, including:
+   - Using value types (structs) over reference types (classes) when appropriate.
+   - Optimizing view updates using @State, @Binding, and @ObservedObject.
+   - Leveraging LazyVStack and LazyHStack for large lists.
+   - Implementing the Identifiable protocol for collection items.
+   - Utilizing AsyncImage for efficient image loading.
+4. Performance optimization techniques:
+   - Minimizing unnecessary view updates and redraws.
+   - Reducing dynamic dispatch through appropriate use of 'final' and access modifiers.
+   - Efficient use of container types and generics.
+   - Optimizing data flow and UI updates.
+5. Code structure, readability, and organization improvements:
+   - Suggest an optimal file hierarchy and structure for the project.
+   - Recommend splitting large files into smaller, more focused components.
+   - Propose clear naming conventions for files, classes, structs, and functions.
+   - Advise on the use of extensions to separate concerns within types.
+   - Suggest the creation of reusable components and utilities.
+   - Recommend appropriate use of access control modifiers (public, internal, private, etc.).
+   - Propose organization of code into logical groups or modules.
+6. Memory management best practices.
+
+For each attached file, provide:
+1. A summary of the main issues identified.
+2. Specific code suggestions with explanations for each improvement.
+3. Any relevant documentation references or Apple guidelines that support your recommendations.
+
+For each suggestion to split or reorganize code:
+   - Provide a rationale for the proposed change.
+   - Outline the new file structure or hierarchy.
+   - Give examples of how the code should be divided or renamed.
+   - Explain how this improves maintainability, readability, or reusability.
+
+If you encounter any ambiguities or need more context, please ask for clarification. Your goal is to help refine the code to meet Apple's high standards for performance, design, and user experience.
+
+## Usage
+
+When using this prompt with an LLM:
+1. Prepare your iOS code files for review.
+2. Present this prompt to the LLM.
+3. Provide the code files or snippets for review.
+4. Review the LLM's suggestions and implement improvements as needed.
